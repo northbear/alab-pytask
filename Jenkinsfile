@@ -4,7 +4,7 @@ pipeline {
             image 'python:3.8'
         }
     }
-    triggers{ pollSCM('H/5 * * * *') }
+    triggers{ pollSCM('H/2 * * * *') }
     stages {
         stage('Pull The Task') {
             steps {
